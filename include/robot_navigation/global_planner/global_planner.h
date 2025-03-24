@@ -4,7 +4,7 @@
 
 #include <memory>
 #include <vector>
-#include "data.h"
+#include "navigation_data/data.h"
 
 class GlobalPlanner {
 public:
