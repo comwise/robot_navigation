@@ -1,9 +1,13 @@
-#include "costmap.h"
+#include "costmap2d.h"
 
 Costmap2D::Costmap2D(size_t width, size_t height, double resolution)
-        : width_(width), height_(height), resolution_(resolution) {
+        : Costmap(width, height, resolution) {
         data_.resize(width * height, 0);
-    }
+}
+
+Costmap2D::~Costmap2D() {
+
+}
 
 // 设置/获取代价值
 void Costmap2D::setCost(size_t x, size_t y, unsigned char cost) {
